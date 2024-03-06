@@ -5,18 +5,22 @@ import { Item } from "./Item";
      b: string;
    }
    interface listItem {
+     id:number;
      title: string;
      marks: marklist;
    }
    interface listProps{
     data:listItem[]
+    handleEdit:(id:number,title:string)=>void
    }
-export const List: React.FC<listProps> = ({data}): JSX.Element => {
+export const List: React.FC<listProps> = ({data,handleEdit}): JSX.Element => {
   return (
     <div className="w-1/2">
-      <ul >
+      <ul>
         {data.map((item) => (
-          <Item title={item.title}></Item>
+            <li key={item.id}>
+          <Item  title={item.title} id={item.id} handleEdit={handleEdit}></Item>
+          </li>
         ))}
       </ul>
     </div>
