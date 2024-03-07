@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/List/static/css/main.0fa12358.css",
+    "main.js": "/List/static/js/main.e1136111.js",
+    "static/js/453.a51aa9f8.chunk.js": "/List/static/js/453.a51aa9f8.chunk.js",
+    "static/media/Yekan-normal.ttf": "/List/static/media/Yekan-normal.f26972c64b83c2aea5ca.ttf",
+    "index.html": "/List/index.html",
+    "main.0fa12358.css.map": "/List/static/css/main.0fa12358.css.map",
+    "main.e1136111.js.map": "/List/static/js/main.e1136111.js.map",
+    "453.a51aa9f8.chunk.js.map": "/List/static/js/453.a51aa9f8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0fa12358.css",
+    "static/js/main.e1136111.js"
+  ]
+}
