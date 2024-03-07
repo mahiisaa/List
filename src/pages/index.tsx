@@ -34,9 +34,7 @@ export const HomePage=():JSX.Element=>{
      },
    ];
    const [copiedList, setCopiedList] = useState<listItem[]>(JSON.parse(JSON.stringify(list)));
-   useEffect(()=>{
-    
-   })
+
    
    const handleEdit=(id:number,title:string)=>{
     const updatedList=copiedList.map((item)=>{
@@ -44,20 +42,17 @@ export const HomePage=():JSX.Element=>{
         item.title=title
         return item
     })
-    //console.log(list)
-    console.log(copiedList)
-    //console.log(list===list2)
    setCopiedList(updatedList)
-   console.log(copiedList);
-
    }
     return (
-      <div className="w-full border-4 border-[#003566] rounded-xl w-[600px] p-S flex flex-row justify-between gap-S">
+      <div className=" rounded-xl w-[600px] p-L flex flex-row justify-between gap-S bg-[#fff]">
         <List data={copiedList} handleEdit={handleEdit}></List>
-        <div className=" bg-green-300 w-[4px]"></div>
-        <ul className="w-1/2">
-          {list.map((item2:any) => (
-            <li key={item2.id} className="p-S">{item2.title}</li>
+        <div className="bg-myblack w-[2px]"></div>
+        <ul className="w-1/2 flex flex-col gap-S font-bold">
+          {list.map((item2: any) => (
+            <li key={item2.id} className="p-S ">
+              {item2.title}
+            </li>
           ))}
         </ul>
       </div>

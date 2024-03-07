@@ -16,9 +16,9 @@ import { Item } from "./Item";
 export const List: React.FC<listProps> = ({data,handleEdit}): JSX.Element => {
   return (
     <div className="w-1/2">
-      <ul>
+      <ul className="flex flex-col gap-S">
         {data.map((item) => (
-            <li key={item.id}>
+          <li key={item.id}>
           <Item  title={item.title} id={item.id} handleEdit={handleEdit}></Item>
           </li>
         ))}
